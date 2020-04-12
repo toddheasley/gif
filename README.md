@@ -15,9 +15,8 @@ import UIKit
 import AnimatedGIF
 
 let imageView: UIImageView = UIImageView()
-imageView.contentMode = .scaleAspectFit
-imageView.image = .animatedImage(data: try! Data(contentsOf: URL(fileURLWithPath: "\(NSTemporaryDirectory())animated.gif")))
-imageView.image = .animatedImage(data: try! Data(contentsOf: URL(fileURLWithPath: "\(NSTemporaryDirectory())lifeless.jpg")))
+imageView.image = .animatedImage(data: gifData)
+imageView.image = .animatedImage(data: jpegData)
 ```
 
 By default, GIF playback behavior mimics WebKit, clamping delay between frames to a minimum of 100 milliseconds. Certain GIFs may require a custom clamp value to achieve reasonable playback speed:
@@ -27,7 +26,6 @@ import UIKit
 import AnimatedGIF
 
 let imageView: UIImageView = UIImageView()
-imageView.contentMode = .scaleAspectFit
 imageView.image = .animatedImage(data: data, behavior: .unclamped) // The truth
 imageView.image = .animatedImage(data: data, behavior: .clamped(0.25)) // Clamp animation frames to custom minimum delay time
 imageView.image = .animatedImage(data: data, behavior: .webkit) // Default: .clamped(0.1)
