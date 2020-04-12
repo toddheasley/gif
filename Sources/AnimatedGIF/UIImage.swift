@@ -7,7 +7,8 @@ extension UIImage {
         fileprivate func duration(_ properties: Any?) -> TimeInterval? {
             
             // Look for specified image duration; always prefer unclamped delay time
-            guard let properties: [String: Any] = (properties as? [String: Any])?["{GIF}"] as? [String: Any], let duration: TimeInterval = properties["UnclampedDelayTime"] as? TimeInterval ?? properties["DelayTime"] as? TimeInterval else {
+            guard let properties: [String: Any] = (properties as? [String: Any])?["{GIF}"] as? [String: Any],
+                let duration: TimeInterval = properties["UnclampedDelayTime"] as? TimeInterval ?? properties["DelayTime"] as? TimeInterval else {
                 return nil
             }
             
