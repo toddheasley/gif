@@ -4,7 +4,7 @@ Extends [`UIImage`](https://developer.apple.com/documentation/uikit/uiimage) to 
 
 ## Requirements
 
-Targets [iOS](https://developer.apple.com/ios)/[iPadOS](https://developer.apple.com/ipad)/[tvOS ](https://developer.apple.com/tvos) 13. Written in [Swift](https://developer.apple.com/documentation/swift) 5.2 and requires [Xcode](https://developer.apple.com/xcode) 11.4 or newer to build.
+Targets [iOS](https://developer.apple.com/ios)/[iPadOS](https://developer.apple.com/ipad)/[tvOS ](https://developer.apple.com/tvos) 14. Written in [Swift](https://developer.apple.com/documentation/swift) 5.3 and requires [Xcode](https://developer.apple.com/xcode) 12 or newer to build.
 
 ## Example Usage
 
