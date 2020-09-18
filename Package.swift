@@ -1,12 +1,12 @@
-// swift-tools-version:5.2
+// swift-tools-version:5.3
 
 import PackageDescription
 
 let package = Package(
     name: "AnimatedGIF",
     platforms: [
-        .iOS(.v13),
-        .tvOS(.v13)
+        .iOS(.v14),
+        .tvOS(.v14)
     ],
     products: [
         .library(name: "AnimatedGIF", targets: [
